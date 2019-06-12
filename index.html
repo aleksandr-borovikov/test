@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test_form</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+<form>
+    <label>Введите сообщение</label><br>
+        <textarea class="text" name="text" placeholder="Сообщение..."/></textarea>
+    <br>
+    <label>Транслитерировать </label> <input type="checkbox" name="translit" class="translit" />
+    <br>
+    <br>
+    <label>Количество SMS cообщений: </label><input readonly type="text" name="count" class="count" value="0"/>
+    <br>
+    <br>
+    <div class="result"> </div>
+    <a class="save">Сохранить</a>
+
+</form>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="script/script.js"></script>
+</html>
